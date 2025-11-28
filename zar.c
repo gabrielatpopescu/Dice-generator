@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
-int main(void)
+int main()
 {
 	int x, y, mini, maxi;
-	x = rand() % 6;
-	y = rand() % 6;
+	srand(time(NULL));
+	x = rand() % 6 + 1;
+	y = rand() % 6 + 1;
 	if (x > y) {
 		mini = x;
 		maxi = y;
